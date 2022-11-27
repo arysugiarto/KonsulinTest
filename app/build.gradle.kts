@@ -117,6 +117,19 @@ dependencies {
 
     implementation(Dependencies.Logging.timber)
     implementation(Dependencies.Media.glide)
+    implementation(Dependencies.Media.uCrop)
+    implementation(Dependencies.Media.easyPermission)
+
+    implementation("androidx.camera:camera-core:1.1.0-beta03")
+    implementation("androidx.camera:camera-camera2:1.1.0-beta03")
+    implementation("androidx.camera:camera-lifecycle:1.1.0-beta03")
+    implementation("androidx.camera:camera-extensions:1.1.0-beta03")
+    implementation("androidx.camera:camera-view:1.1.0-beta03")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+    implementation("io.coil-kt:coil:1.4.0")
+    implementation("io.coil-kt:coil-video:1.4.0")
+
 
     Dependencies.kaptImp.forEach { kaptImp ->
         kapt(kaptImp)

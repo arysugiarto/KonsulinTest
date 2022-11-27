@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Doku_Test.iml" filepath="$PROJECT_DIR$/.idea/modules/Doku_Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Doku_Test.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Doku_Test.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Doku_Test.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Doku_Test.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Konsulin_Test.iml" filepath="$PROJECT_DIR$/.idea/modules/Konsulin_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Konsulin_Test.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Konsulin_Test.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Konsulin_Test.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Konsulin_Test.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Konsulin_Test.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Konsulin_Test.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Konsulin_Test.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Konsulin_Test.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Konsulin_Test.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Konsulin_Test.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Konsulin_Test.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Konsulin_Test.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Konsulin_Test.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Konsulin_Test.buildSrc.test.iml" />
     </modules>
   </component>
 </project>

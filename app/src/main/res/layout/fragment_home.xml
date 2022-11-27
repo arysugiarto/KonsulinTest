@@ -3,22 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clDoku"
+        android:id="@+id/clTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/red"
+        android:layout_marginTop="@dimen/screen_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title"
+            android:text="@string/skin_analyzer"
             android:textColor="@color/white"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="@dimen/screen_margin"
             android:layout_marginBottom="@dimen/screen_margin"
@@ -27,30 +30,73 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clear"
+            app:layout_constraintTop_toTopOf="@+id/tvTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/screen_margin"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvTitleDescriptiion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Top business"
-        android:textColor="@color/black"
+        android:text="@string/description_skin_analyzer"
+        android:textColor="@color/white"
         android:textStyle="bold"
+       app:layout_constraintBottom_toTopOf="@+id/tvTitleDescriptionSecond"
+        android:layout_marginTop="@dimen/screen_margin"
         android:textSize="@dimen/_16sdp"
-        app:layout_constraintTop_toBottomOf="@id/clDoku"
-        android:layout_marginTop="@dimen/medium_margin"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="@dimen/screen_margin"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvNews"
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitleDescriptionSecond"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/description_second_skin_analyzer"
+        android:textColor="@color/white"
         android:layout_marginStart="@dimen/screen_margin"
-        android:layout_marginTop="@dimen/screen_margin"
         android:layout_marginEnd="@dimen/screen_margin"
-        android:orientation="vertical"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/clButton"
+        android:layout_marginBottom="@dimen/screen_margin"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_margin"
+        android:background="@drawable/bg_bottom_sheet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:layout_marginStart="@dimen/screen_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/screen_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:iconGravity="textStart"
+            app:icon="@drawable/face_recognition"
+            android:paddingTop="@dimen/screen_margin"
+            android:paddingBottom="@dimen/screen_margin"
+            android:text="@string/starter"
+            android:backgroundTint="@color/purple"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/large_margin"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

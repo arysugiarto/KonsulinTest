@@ -7,7 +7,7 @@
 
     <dimen name="default_button_inset">0dp</dimen>
     <dimen name="medium_button_inset">3dp</dimen>
-    <dimen name="normal_button_inset">4dp</dimen>
+
 
     <dimen name="small_divider">0.5dp</dimen>
     <dimen name="normal_divider">0.75dp</dimen>

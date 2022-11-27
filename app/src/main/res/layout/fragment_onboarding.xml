@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/pgAddProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        app:indicatorColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@id/cb1"
+        app:layout_constraintEnd_toEndOf="@id/cb3"
+        app:layout_constraintStart_toStartOf="@id/cb1"
+        app:layout_constraintTop_toTopOf="@id/cb1"
+        app:trackColor="@color/silver" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/screen_margin"
+        android:button="@drawable/checbox_add_product_branch_selector"
+        android:checked="true"
+        android:clickable="false"
+        android:minWidth="@dimen/zero_margin"
+        android:minHeight="@dimen/zero_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/checbox_add_product_branch_selector"
+        android:checked="false"
+        android:clickable="false"
+        android:minWidth="@dimen/zero_margin"
+        android:minHeight="@dimen/zero_margin"
+        app:layout_constraintEnd_toEndOf="@id/gl"
+        app:layout_constraintStart_toStartOf="@id/gl"
+        app:layout_constraintTop_toTopOf="@id/cb1" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:button="@drawable/checbox_add_product_branch_selector"
+        android:checked="false"
+        android:clickable="false"
+        android:minWidth="@dimen/zero_margin"
+        android:minHeight="@dimen/zero_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/screen_margin"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@id/clButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/semi_extra_huge_margin"
+        android:paddingBottom="@dimen/screen_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAction"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:backgroundTint="@color/purple"
+            android:insetTop="@dimen/zero_margin"
+            android:insetBottom="@dimen/zero_margin"
+            android:padding="@dimen/medium_margin"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/glButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:backgroundTint="@color/white"
+            android:insetTop="@dimen/zero_margin"
+            android:insetBottom="@dimen/zero_margin"
+            android:padding="@dimen/medium_margin"
+            android:textColor="@color/purple"
+            android:text="@string/cancelled"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/_4sdp"
+            app:layout_constraintEnd_toStartOf="@id/glButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

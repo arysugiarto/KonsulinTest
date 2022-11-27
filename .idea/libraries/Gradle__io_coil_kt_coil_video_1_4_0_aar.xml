@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: io.coil-kt:coil-video:1.4.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/082be926b4e618a0d05e1ce97716ef48/transformed/jetified-coil-video-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/082be926b4e618a0d05e1ce97716ef48/transformed/jetified-coil-video-1.4.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.coil-kt/coil-video/1.4.0/501d985a6c2c4a9d2dfba814138788f9f1d6cedc/coil-video-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.coil-kt/coil-video/1.4.0/1dcae2f2762a4ba0c9bec682b1e99f829c95665d/coil-video-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

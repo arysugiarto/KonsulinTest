@@ -43,6 +43,10 @@ object Version {
     const val timberVersion = "4.7.1"
 
     const val intuitVersion = "1.0.6"
+
+    const val uCropVersion = "2.2.5"
+
+    const val easyPermissionVersion = "3.0.0"
 }
 
 object Dependencies {
@@ -121,6 +125,8 @@ object Dependencies {
     object Media {
         const val glide = "com.github.bumptech.glide:glide:${Version.glideVersion}"
         const val glideCompilerKapt = "com.github.bumptech.glide:compiler:${Version.glideVersion}"
+        const val uCrop = "com.github.yalantis:ucrop:${Version.uCropVersion}"
+        const val easyPermission = "pub.devrel:easypermissions:${Version.easyPermissionVersion}"
     }
 
     object Injection {

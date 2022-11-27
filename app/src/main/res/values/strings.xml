@@ -11,5 +11,38 @@
     <string name="detail_title">Detail News</string>
     <string name="nav_apple">Apple News</string>
     <string name="nav_top">Top Bussines</string>
+    <string name="skin_analyzer">Skin Analyzer</string>
+    <string name="description_skin_analyzer">Analisa kondisi kulit kamu</string>
+    <string name="description_second_skin_analyzer">Lorem Ipsum is simply dummy text of</string>
+    <string name="starter">Mulai Sekarang</string>
+    <string name="title_skin_condition">Bagaimana kondisi kulit kamu?</string>
+    <string name="title_skin_problem">Apa masalah kulit kamu?</string>
+    <string name="cancelled">Batal</string>
+    <string name="next">Lanjut</string>
+    <string name="back">kembali</string>
+    <string name="title_years">Berapa umur kamu?</string>
+    <string name="title_location">Dimana lokasi anda sering menghabiskan waktu?</string>
+    <string name="location">Lokasi</string>
+    <string name="desc">Untuk hasil yang maksimal pastikan anda berada di tempat dengan pencahayaan yang cukup</string>
+    <string name="take_foto">Ambil foto</string>
+
+    <!--Image Picker-->
+    <string name="image_picker_information">Informasi</string>
+    <string name="image_picker_no_gallery_access_warning">Aplikasi ini membutuhkan akses untuk memilih foto di galeri anda</string>
+    <string name="image_picker_close">Tutup</string>
+    <string name="image_picker_select_image_dialog_title">Set Profile Image</string>
+    <string name="image_picker_permission_access_camera">We Need Permission To Access Camera or Gallery!</string>
+    <string name="message_no_permissions">izinkan</string>
+    <string name="label_ok">oke</string>
+
+
+    <dimen name="half_margin">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="double_margin">32dp</dimen>
+
+    <dimen name="button_size_shutter">100dp</dimen>
+    <dimen name="button_size_big">56dp</dimen>
+    <dimen name="button_size_small">36dp</dimen>
+    <dimen name="count_down_text_size">72sp</dimen>
 
 </resources>
